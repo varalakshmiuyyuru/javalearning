@@ -1,0 +1,53 @@
+Abstraction:
+=========== 
+-Hiding the internal implimentation and
+ exposing the rwlavent details.
+ note:
+ ----
+--->object creation is not possible for the abstract class
+    but we can create object for the class which extends the abstract class.
+--->abstract class always begin with the abstract keyword.
+    and also required the abstract keyword while creating the methods in the abstract which are abstract methods.
+ 
+-Java allows towo ways:
+ 
+  -abstrsctin classes
+  -intefaces
+  
+ Abstract classes:
+ ================
+ syntax:
+ abstrsction class classname{
+ //varables
+ //constructor
+ //methods  -- can we create in two ways 1.method with body
+                                         eg: public void doTask(concrete method){
+                                               //body
+                                               }
+                                          2.method without body
+                                          eg: abstract void doAnotherTask(abstract method)     
+                                           }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
