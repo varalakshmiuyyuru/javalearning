@@ -1,0 +1,201 @@
+Java provides two ways to create a thread:
+========================================
+
+1. By extending Thread class
+  Steps:
+ - Create a class that extends thread
+ - override the run() method
+ - write the task or work inside the run() method
+ - create an object of the class
+ - call the start() to start a new thread. 
+ never call run() method directly to start a method
+ - the new thread exectescthe run() method
+
+-> run() method defines the work
+-> start() method starts a new method
+
+2. By impelemting Runnable interface
+ Steps:
+ - create a class which implements Runnable interface
+ - override the run() method
+ - write the task/work inside run()
+ - To use the thread created by implementing runnable interface
+   Create an object to the task(runnable)class
+   Pass the eunnable object to a Thread object
+   call start() method to the Thread object
+   The new Thread executes the runnable's run() method
+   
+   Life cycle or states of thread : 
+   A thread moves through different stages from creation to completion.
+   
+   There are 6 states of thread.
+   
+   1..New state : 
+    	A thread has been created but start() method is not yet called.
+    	example : Thread t=new Thread();
+    	In the above thread object is created but thread not started.
+   2..Runnable state : 
+   	   when start() method is called , the thread enters the Runnable state.
+   	   example: t.start();
+   		-thread is ready and waiting for cpi
+   		-once cpu schedules this thread , the thread will start executing
+   		-threadschedular decides which runnable thread gets cputime.
+   3..Blocked state :
+   A thread goes into blocked state when it is waiting to acquire a lock 
+   to synchronized code.
+   
+   4..waiting state : 
+   		A thread enters waiting state when it waits for another thread.
+   		
+   5..timed_waiting:
+   	A thread enters Timed_waiting state when it waits for specific amount of time.
+   	
+   	eg: sleep(1000);
+   
+   6..Terminated state :
+   	A thread enters Terminated state when its run() method finishes execution.
+   	
+   Join() method : 
+   Join() methods used when one thread as to wait for another thread to finish.
+   Join() makes the currently executing thread wait until 
+   the thread on which join() is called competes
+   
+   syntax:
+   thread.join();
+   
+   example : task.join()
+   
+   Note : In the above ,it does not mean that task thread is waiting.
+   task thread will execute and currently running thread() main thread will wait until the task thread completes.
+   
+   ==>we use join() when the next operation depends on the result of another thread.
+   
+   
+   we can specify the maximum waiting time for join() method 
+   example: thread.join(2000);
+   It means that current thread waits upto 2000 milliseconds for thread.
+   
+   join() method throws a checked exception called InterruptedException
+   since its a checked exception ,we must handle or declare it.
+   
+   join() is an instance method of thread class.
+   
+   It is used for thread coordination.
+   
+   Method Synchronisation
+   
+   when multiple threads access and modify the shared data,incorrect results may occur because threads can execute simultenously 
+   
+   synchronization is a mechanism used to control access to a shared data resource when multiple thread are executing concurrently.
+   
+   It prevents the race condition
+   Race condition : 
+   Race condition is a condition when multiple threads try to modify the shared resources
+   
+   To avoid this race condition we use a keyword "synchronized"
+   
+   When thread enters a synchronized method it acquires the lock of the object.
+   
+   other threads trying to execute the synchronized method on the same object must wait until the lock is released.
+   
+   when a thread is executing synchronized method other same object must wait until the lock is released.
+   
+   when a thrad completes its task,it releases the lock and changes made by thread will updated in the main memory .
+   Then,the next thread acquires the lock,it reads the values from the main memory.
+   
+   
+   wait(),notify(),notifyAll():
+   ============================
+   
+   These methods are used tfor inter-thread communication.
+   ex. producer-consumer porblems.
+   
+   When thrads are working with the same resourse , these  methods allow  the thteads to 
+   coordinate with eachother.
+   
+   1.wait():
+          makes   the current thread  wait until another notifies it.
+   wait() mathod the releses the monitor/lock of object  which wait is called.
+   
+   wait() is normally used inside syncheonized method or block.
+   It throws InterruptedException 
+   
+   we normally use wait() inside a while loop, 
+   so that the condition is checked again after waking.
+   
+   2.notify() :
+   notify()  methos gives a single to a thread that is waiting on same
+   object monitor.
+   
+   3.notifyAll() :
+   when  multiple threads are waiting for a resource ,notifyAll() method 
+   called to send  a signal to all threads.
+   
+   Example of Producer ant consumer :
+   
+   Producer :
+   
+   1.when the messagebox is full , the producer waits by calling wait()
+   2.producer produces the message only when the message box is empty.
+   3.once the producer produces the message ,it calls notify() method to signal the consumer that the message is available.
+   
+   consumer :
+    
+   1.when the messagebox is empty,the consumer waits by calling wait()
+   2.consumer consumes the message only when the messageBox is full.
+   3.once consumer consumes the message ,it calls notify() method to signal the producer that the message has been consumed
+   4.Now , the producer will produce the message in the messageBox.
+   
+   
+   
+   
+   Volatile :
+   =========
+   volatile is a modifier used with variable.
+   It is also called as non-access modigier.
+   
+   It is used in multithreading where multiple threads
+   access/share the sam evariable.
+   
+   Synatx:
+   ======
+   accsessmodifier volatile datatype variable name=value;
+   ex:
+   private volatile boolean running=true;
+   
+   
+   when a variable is declared as volatile .
+   the thread will access the latest value return by another thread immeidaietly .
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

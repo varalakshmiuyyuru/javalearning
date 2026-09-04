@@ -1,0 +1,207 @@
+Control flow: 
+
+Control flow is the order in which the statements
+of a program are executed. 
+
+- Control flow decides the sequence in which the program
+is executed. 
+
+Types of control flow: 
+----------------------
+1. Sequential flow: Statements are executed one after another. 
+
+2. Selection or Decision Making: 
+It chooses the path based on a condition:
+Used with: 
+1. if
+2. if - else
+3. else-if 
+4. switch
+
+3. Iteration(Looping):
+
+1. for looop
+2. while
+3. do-while
+
+3. Jump statements:
+- Transfers the control from one place to another place. 
+  Used with: 
+   1. break
+   2. continue
+   3. return
+   
+   
+   Syntax of if statement: 
+    
+    if(condition){
+    
+    // code block
+    
+    }
+    
+    syntax of if with else: 
+    if(condition){
+       //code to be executed if condition is true
+    }
+    else{
+    // code to be executed if condition is false
+    }
+   
+   
+   syntax of else if:
+   ================
+   
+   if(condition){
+   // code
+   }
+   else if(condition){
+     //code
+   }
+   else if(condition){
+      //code
+   }
+   else{
+   //code
+   }
+   
+   
+   An else-if is a decision making construct which is used when
+   there are multiple conditions to check. 
+   
+   
+   Switch statement: 
+   =================
+   A switch statement is a decision making control flow statement used to 
+   execute one block of code from multiple choices based on the 
+   value of an expression. 
+   
+   Like if-else-if ladder, which checks for multiple conditions,
+   a switch statement directly compares the expressio  with  predefined
+   case values.
+   
+   Syntax:
+   ======
+   switch(expression)  // expression is the value to be checked
+    case value1:       // represents one possible value of the expression
+        //statements
+     break;            // break is used to exit the switch after executing matching case. 
+     
+     case value2:
+     //statements
+     break;
+     
+     case value3:
+     //statements
+     break;
+     
+     |
+     |
+     |
+     
+     default: 
+     //statements
+     
+     }
+        
+   
+   
+   
+   
+   
+   
+   Write a program print the Week day name using switch .. case
+   eg: 
+   
+   Pleaase enter the day: Sunday
+   Sunday is day one of the week. 
+   
+   Please enter the day : Monday
+   Monday is the second day of the week
+   
+   
+   Break statement:
+   ================
+   
+   The break statement is used to exit a loop immediately, even
+   if the loop condition is still true. 
+   
+   Syntax:
+   ------
+   
+   for(...){  
+      if(condition){
+       break;    
+      }
+  }
+  
+  
+  continue statement: 
+  ===================
+  
+  The continue statement skips the remaining statements
+  in the current iteration and immediately starts the next
+  iteration of the loop. 
+  
+  continue will not terminate the loop, where as break statement terminates
+  the loop. 
+   
+   Syntax:
+   -------
+   for(...) {
+
+    if(condition) {
+        continue;
+    }
+
+}
+
+
+Uses of break statement:
+1. Exit a loop when the required result is found
+2. Stop searching after finding a match.
+3. Generally used in switch case , menu driven 
+   programs
+4. stop processing when an error occurs
+5. Terminate infinite loops safely. 
+
+Uses of continue:
+1. We can  skip the invalid input using continue.
+2. Continue processing remaining data. 
+
+Major differences : 
+1. break will stop the loop
+   continue will not stop the loop
+2. Break will not continue the loop after skipping iteration
+   Continue will continue loop after skipping iteration
+3. Break transfers thge control after the loop
+   Continue will not stop iterations, it will continue with next iteration
+4. Break is generally used with: 
+     for, while, do-while, switch
+   continue is generally used with 
+      for , while, do-while
+
+
+*
+* *
+* *  *
+
+1
+1 1
+1 1 1
+
+1
+1 2 3
+1 2 3 4
+
+* * *
+* * *
+* * *
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+Method Ovewrloading: 
+
+Method overloading is the process of creating multiple
+methods with the same name but with different parameter list
+in the same class. 
+
+The compiler decides which method to call based on the 
+arguments passed. 
+
+Rules of Method overloading: 
+
+1. Methods must have: 
+ - Same method name
+ - Different parameter list
+ 
+ 2. In each of the method with the same name,\
+      The parameter list can differ by:
+        - number of parameters
+        - type of parameters
+        - order of the important (if the type of parameters are different)
+ 
+  3. There are different names for method overloading: 
+      1. compile time polymorphism
+      2. static polymorphism
+      3. Early binding
+      4. ad-hoc polymorhism
+
+4. Compile time polymorphism meaning: 
+     - The compiler during compilation decides 
+       which overloaded method to call.
+     
+     Method resolution: 
+     When we have multiple methods with same name,
+     which method to be called is known as method resolution/.
+     
+     The compiler performs method resolution by following these steps:
+     1. Finds all method with the given name.
+     2. Compares their parameter lists with the argument in the method call.
+     3. Applies overloading rules to find the exact match. 
+     4. Selects the matching method.
+     5. Generates the byte code which calls the specific method. 
+     
+     
+     // Create a class Student
+         - register(String name)
+         - register(String name,  int age, char gender)
+     
+    Method Signature:
+    ==================
+    A method signature is the identity of the method 
+    Compiler uses method signature to differentiate one method
+    from another method when they have same name. 
+    
+    Method signature consists  of: 
+    
+    1. Method name
+    2. Parameter List
+        - Number of parameter
+        - data type of the parameters
+        - order of the parameters(when datatypes of parameter are different)
+    
+    Method Signature = Method Name + Parameter List
+    
+    *** Method return type is not the part of method signature
+        Access modifiers(public,private..) are not part of method signature
+        
+    
+    
+     
+        
+        
+
+ 
+ 

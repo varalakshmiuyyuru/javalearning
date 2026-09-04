@@ -1,4 +1,4 @@
-package com.methods;
+package com.dateandtime.methods;
 
 import java.util.Scanner;
 

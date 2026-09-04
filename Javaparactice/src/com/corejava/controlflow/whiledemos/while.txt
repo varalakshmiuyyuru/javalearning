@@ -1,0 +1,91 @@
+While loop:
+
+Loop:
+A loop is a something which repeatedly 
+executes a block of code as long as a 
+specified condition is true for a fixed
+number of times. 
+
+Instead of writing the same statements multiple 
+times, a loop allows us to write them only once
+and execute them repeatedly. 
+
+
+Loops will help us to do the following: 
+1. Avoids writing repetititve code
+2   reduce program size
+3. Improves the readability and maintainability. 
+
+
+while syntax:
+
+while(condition){
+  //body or code
+
+}
+
+
+If the condition is true , the loop executes the body
+\If the condition is false, the loop exits.
+
+
+Task:
+====
+
+
+Write a Java program to simulate a Placement Portal login system using a while loop. 
+The program should repeatedly ask the user to enter a password until the correct password is entered. 
+Once the correct password is entered,  
+display a login success message and show the placement portal menu options.
+
+Expected output: 
+================
+=====================================
+   Welcome to Codegnan Placement Portal
+=====================================
+
+Enter Password: codegnan123
+
+Login Successful.
+Welcome to the Placement Portal!
+
+You can now access:
+1. View Profile
+2. Search Companies
+3. Apply for Jobs
+4. View Applied Jobs
+
+
+while loop is an entry controlled loop.
+
+do while:
+=========
+
+a do- while loop is also called as exit - controlled loop in java. 
+It executes a block of code atleast once and then
+repeatedly executes as long as the condition is true.
+
+Unlike, a while loop the condition is checked after executing the loop body. 
+
+
+
+
+
+
+
+
+\
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+Wraper calsses  provide an object representation 
+of primitive values.
+
+they will also provide useful for working with those values.
+
+
+
+
+
+
+byte  -Byte
+short   -Short
+Int  - Integer
+long - Long
+double - Double
+float -Float
+char  - Character
+boolean -Boolean
+
+
+ex: to convert primitive to an object 
+int v=10//primitive 
+Integer 
+
+
+
+
+Auto boxing :
+=============
+automatic conversion of primitive type to wrapper class object type.
+ex: 
+int->Integer
+byte->Byte
+
+
+
+AutoUnboxung or UnBoxing:
+========================
+
+automatic conversion of wrapper class object type into primitive type
+
+ex: 
+          Integer -> int
+          Byte    -> byte
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

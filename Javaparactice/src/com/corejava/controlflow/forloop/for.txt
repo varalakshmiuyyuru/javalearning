@@ -1,0 +1,52 @@
+for Looop in java:
+-----------------
+
+
+
+for looop is an entry controlled loop 
+It is used to execute a block of code repeatedly for a known number of times. 
+It is generally used when you know how many iterations the loop should
+perform. 
+
+Syntax:
+
+for(initialization; condition; update(increment/decrement)){
+   //body
+}
+
+Initialization: 
+----------------
+Initilization is executed onlyu once before the loop starts
+It is used to create and initialize the loop control variable. 
+
+
+Loop control variable:
+A loop control lvariable is a variablel that controls the execution of the loop
+It keeps track of current iteration.
+It helps to know how many times the loop should execute. 
+It is usually updated i.e incremented or decremented after each iteration. 
+eg: for(int i=1; i<=10; i++)){}
+In the above example, i is called loop controlvariable.
+
+condition: 
+Second part of for loop is the condition. 
+It is checked before evewry iteration. 
+if the condition is true, the loop body executes
+If the condition is false , the loop terminate.s.
+
+increment/decrement: 
+=====================
+increment or decrement of the loop control variable is done after executing
+every iteration. 
+It updates the loop control variable. 
+
+Task: 
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+Exception Handling :
+===================
+ An exception is an abnornmal condition 
+ that disturbs/disrupts the normal
+ flow of Execution.
+ 
+ A flow is said to be normal when all 
+ the stataments are scucessfully executed in the program.
+ This is also known as Gracefull termination of program.
+ 
+ 
+ If the program Stops without executing all
+ the statements then we say that it is an 
+ abnormal termination of program.
+ 
+ 
+
+ 
+ Exception handling using try-catch :
+ 
+ syntax:
+ ======
+ try{
+ 	//risky code
+ 	}catch(Exception e){ 
+            //handling code
+            }
+ 
+   
+ 

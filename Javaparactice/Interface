@@ -1,0 +1,67 @@
+interface: 
+=========
+interface is blueprint it contain abstract methods and constants.
+that can implement in the class.
+
+Basic rules of Interfaces:
+============================
+    1.An interface defines a contract,it specifies what a class must be able to do.
+
+     It will not provide the implementation,the implementation must be provided by the implemented class.
+
+    syntax:
+    -------
+         interface InerfaceName{
+            //variables
+            double PI=3.14;internally it will vhange as publlic satic final double PI=3.14;
+            //abstract
+            //
+         }
+
+
+    2. Any class implimenting the interface must provide  implimention to interface's abstract methods.
+
+    3.we cannot create object  for interface
+    
+    4.we cannot create consructor for interfaces
+    
+    5.we cannot create instance variables for instance
+    
+    6.when a variable is declared in interface it automatically because
+      a public a static final.
+
+        eg.     public final String method(){
+
+              }
+              
+              
+     7.Before java 8,interface allowed only abstract methods.
+     
+      java 8 has introduced   default and Static methods in interfaces.
+      
+      java 9+ has introduced private methods
+     
+     8. the class sin which we u se the interface must use keyword "impliments".
+     
+            eg. if MyInterface is an interface
+            
+           and MyClass is a class 
+           
+           then Myclass must use the interface  follows:
+                  
+                  Myclass impliments MyInterface;
+                  
+        9. Aclass can impliment  multiple interfaces ,
+           this is reffered to as multiple interface implimentation.
+           
+        10.interface =contract/capability 
+           abstract class =common base class with shared state and behaviour.
+           
+       11.we use interface when we only want to define a contract
+          we use abstract classes when we wnat to common instace variables and state for an object
+        
+       12.we use abstract class when we need consructors ,interfaces cannot have consructors.
+       
+       13.when we  want to describe what an object "Is" then consider the abstract class.
+       
+	   14.when we want to describe what an object "Can Do" we consider the interfaces. 
